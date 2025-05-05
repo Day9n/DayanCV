@@ -18,7 +18,7 @@ $pageTitle = "Ohon Dayan - Personal CV";
             <div class="profile-container">
                 <div class="profile-image">
                     <!-- Add your profile image here -->
-                    <img src="images/profile.jpg" alt="Ohon Dayan">
+                    <img src="images/Dayan.jpeg" alt="Ohon Dayan">
                 </div>
                 <div class="profile-info">
                     <h1>Ohon Dayan</h1>
