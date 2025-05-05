@@ -10,12 +10,16 @@
 </head>
 <body>
     <div class="container">
+        <!-- Admin Login Link -->
+        <div class="admin-login">
+            <a href="admin/dashboard.html" class="admin-link" onclick="return checkAdminAccess(event)"><i class="fas fa-lock"></i></a>
+        </div>
+
         <!-- Header Section -->
         <header class="header">
             <div class="profile-container">
                 <div class="profile-image">
-                    <!-- Add your profile image here -->
-                    <img src="images/profile.jpg" alt="Ohon Dayan">
+                    <img src="images/Dayan.jpg" alt="Ohon Dayan">
                 </div>
                 <div class="profile-info">
                     <h1>Ohon Dayan</h1>
@@ -103,5 +107,17 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script>
+        function checkAdminAccess(event) {
+            event.preventDefault();
+            const password = prompt('Enter admin password:');
+            if (password === 'password') {
+                window.location.href = 'admin/dashboard.html';
+            } else {
+                alert('Invalid password');
+            }
+            return false;
+        }
+    </script>
 </body>
 </html> 

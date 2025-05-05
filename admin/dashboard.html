@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - CV Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="admin-info">
+                <img src="../images/Dayan.jpg" alt="Admin" class="admin-avatar">
+                <h2>Ohon Dayan</h2>
+                <p>Administrator</p>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#profile"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="admin-actions">
+                <a href="../index.html" class="view-site"><i class="fas fa-eye"></i> View Site</a>
+                <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </nav>
+
+        <main class="content">
+            <header class="dashboard-header">
+                <h1>Dashboard</h1>
+                <div class="actions">
+                    <button class="save-all"><i class="fas fa-save"></i> Save All Changes</button>
+                </div>
+            </header>
+
+            <div class="edit-sections">
+                <!-- Profile Section -->
+                <section id="profile" class="edit-section">
+                    <h2>Profile Information</h2>
+                    <div class="form-group">
+                        <label>Profile Image</label>
+                        <div class="image-upload">
+                            <img src="../images/Dayan.jpg" alt="Profile Preview" id="profilePreview">
+                            <input type="file" id="profileImage" accept="image/*">
+                            <label for="profileImage" class="upload-btn"><i class="fas fa-upload"></i> Change Image</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" value="Ohon Dayan">
+                    </div>
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" value="ИЗОУИС УИТС КПХ 323А-р бүлгийн оюутан">
+                    </div>
+                    <div class="form-group">
+                        <label>About Me</label>
+                        <textarea rows="4">Би олон талын авьяас чадвартай, тууштай, бүтээн байгуулалтад залуу үран бүтээлч...</textarea>
+                    </div>
+                </section>
+
+                <!-- Other sections will be dynamically loaded -->
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html> 
